@@ -1,80 +1,62 @@
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
+
 int main()
 {
-    queue<int> q1;
+    queue<int> q;
+    stack<int> s;
     for(int i=1;i<=10;i++)
-    q1.push(i);
-    //present queue :- 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-    //output queue :- 1 , 6 , 2 , 7 , 3 , 8 , 4 , 9 , 5 , 10 
-    // lets say we have one stack s1 and given queue q1 
-    stack<int> s1;
+    q.push(i);
+    // q = 1,2,3,4,5,6,7,8,9,10 s = 
     
-    // push first n/2 elements of q1 into s1 
-    for(int i=0;i<5;i++)
-    {
-        s1.push(q1.front());
-        q1.pop();
-    }
-    // s1 :- 5 , 4 , 3 , 2 , 1  q1 :- 6, 7, 8, 9, 10 
+    int n = q.size();
     
-    // push elements of s1 into q1 
-    while(!s1.empty())
+    // step-1: push n/2 elements into the stack 
+    for(int i=0;i<n/2;i++)
     {
-        q1.push(s1.top());
-        s1.pop();
+        s.push(q.front());
+        q.pop();
     }
-    // s1 :-  q1 :- 6,7,8,9,10,5,4,3,2,1 
+    // q = (front)6,7,8,9,10 s = (top)5,4,3,2,1
     
-    //push first n/2 elements of q1 into s1 again 
-    for(int i=0;i<5;i++)
+    // step-2 : push back all elements in stack back to queue 
+    while(!s.empty())
     {
-        s1.push(q1.front());
-        q1.pop();
+        q.push(s.top());
+        s.pop();
     }
-    //s1 :- 10,9,8,7,6 q1:- 5, 4, 3, 2, 1,
+    // q = 6,7,8,9,10,5,4,3,2,1 s = {}
     
-    // push elements of s1 into q1 
-    while(!s1.empty())
+    // step-3 dequeue the first half of the elements from queue and enqueue them back into the queue
+    for(int i=0;i<n/2;i++)
     {
-        q1.push(s1.top());
-        s1.pop();
+        q.push(q.front());
+        q.pop();
     }
-    // s1 :-  q1 :- 5,4,3,2,1,10,9,8,7,6 
+    // q = 5,4,3,2,1,6,7,8,9,10 s = {}
     
-    //push all elements of q1 into s1 
-    for(int i=0;i<10;i++)
+    // step-4 push n/2 elements into the stack
+    for(int i=0;i<n/2;i++)
     {
-        s1.push(q1.front());
-        q1.pop();
+        s.push(q.front());
+        q.pop();
     }
-    //s1 :- 6,7,8,9,10,1,2,3,4,5  q1:-
+    // q = 6,7,8,9,10 s = 1,2,3,4,5 see the order of elements
     
-    // push n/2 elements from stack to q 
-    for(int i=0;i<5;i++)
+    //step-5 obtain the interleaving order
+    while(!s.empty())
     {
-        q1.push(s1.top());
-        s1.pop();
+        q.push(s.top()); 
+        s.pop();
+        q.push(q.front()); // push the first element of queue into queue 
+        q.pop(); // pop the front element 
     }
-    //s1 :- 1,2,3,4,5  q1 :- 6,7,8,9,10 
-    
-    while(!s1.empty())
+    // q = 1,6,2,7,3,8,4,9,5,10 
+    while(!q.empty())
     {
-        //pop top element of stack 
-        int k = s1.top();
-        s1.pop();
-        //push top element of stack into q 
-        q1.push(k);
-        //push front element of queue to the back and pop it from the front.
-        q1.push(q1.front());
-        q1.pop();
+        cout<<q.front()<<" ";
+        q.pop();
     }
-    
-    //printing queue
-    while(!q1.empty())
-    {
-        cout<<q1.front()<<" ";
-        q1.pop();
-    }
+    cout<<endl;
 }
