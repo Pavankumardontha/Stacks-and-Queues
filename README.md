@@ -7,6 +7,7 @@
 
 # Latest
 1) Largest Rectangle in Histogram
+2) Daily Temperatures
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
