@@ -10,8 +10,9 @@
 2) Maximal Rectangle
 3) Daily Temperatures
 4) Online Stock Span
-5) Maximum width ramp
-6) The Celebrity Problem (gfg)
+5) Next Greater Element II
+6) Maximum width ramp
+7) The Celebrity Problem (gfg)
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
