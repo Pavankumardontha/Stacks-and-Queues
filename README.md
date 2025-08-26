@@ -7,8 +7,9 @@
 
 # Latest
 1) Largest Rectangle in Histogram
-2) Daily Temperatures
-3) Maximum width ramp
+2) Maximal Rectangle
+3) Daily Temperatures
+4) Maximum width ramp
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
