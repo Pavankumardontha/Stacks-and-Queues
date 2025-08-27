@@ -1,9 +1,6 @@
 # Stacks
-1) Stock span (gfg)
 2) CMG - Collecting Mango (SPOJ) 
 3) First non-repeating character in a stream
-4) Remove duplicate letters - IMP
-5) Smallest Subsequence of Distinct Characters (same as 4)
 
 # Latest
 1) Largest Rectangle in Histogram
@@ -13,8 +10,9 @@
 5) Next Greater Element II
 6) Make Array Non-decreasing
 7) Smallest Subsequence of Distinct Characters
-8) Maximum width ramp
-9) The Celebrity Problem (gfg)
+8) Remove Duplicate Letters
+9) Maximum width ramp
+10) The Celebrity Problem (gfg)
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
