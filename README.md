@@ -12,8 +12,9 @@
 4) Online Stock Span
 5) Next Greater Element II
 6) Make Array Non-decreasing
-7) Maximum width ramp
-8) The Celebrity Problem (gfg)
+7) Smallest Subsequence of Distinct Characters
+8) Maximum width ramp
+9) The Celebrity Problem (gfg)
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
