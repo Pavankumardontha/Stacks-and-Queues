@@ -11,8 +11,9 @@
 6) Make Array Non-decreasing
 7) Smallest Subsequence of Distinct Characters
 8) Remove Duplicate Letters
-9) Maximum width ramp
-10) The Celebrity Problem (gfg)
+9) Asteroid Collision
+10) Maximum width ramp
+11) The Celebrity Problem (gfg)
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
