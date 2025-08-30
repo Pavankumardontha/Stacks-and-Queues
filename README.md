@@ -3,18 +3,19 @@
 3) First non-repeating character in a stream
 
 # Latest
-1) Largest Rectangle in Histogram
-2) Maximal Rectangle
-3) Daily Temperatures
-4) Online Stock Span
-5) Next Greater Element II
-6) Make Array Non-decreasing
-7) Smallest Subsequence of Distinct Characters
-8) Remove Duplicate Letters
-9) Asteroid Collision
-10) Sliding Window Maximum
-11) Maximum width ramp
-12) The Celebrity Problem (gfg)
+1) Valid Parentheses
+2) Largest Rectangle in Histogram
+3) Maximal Rectangle
+4) Daily Temperatures
+5) Online Stock Span
+6) Next Greater Element II
+7) Make Array Non-decreasing
+8) Smallest Subsequence of Distinct Characters
+9) Remove Duplicate Letters
+10) Asteroid Collision
+11) Sliding Window Maximum
+12) Maximum width ramp
+13) The Celebrity Problem (gfg)
 
 # Links 
 1) https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
